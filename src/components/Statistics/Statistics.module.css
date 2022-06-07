@@ -1,0 +1,26 @@
+.statistics{
+    border: solid 0.5px black;
+    margin-bottom: 20px;
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-top: solid 0.5px black;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}

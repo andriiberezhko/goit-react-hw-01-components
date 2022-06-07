@@ -1,0 +1,17 @@
+.item  {
+    display: flex;
+    align-items: center;
+    border: solid 0.5px rgb(134, 134, 134);
+}
+
+.name{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+.status{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 20px;
+}

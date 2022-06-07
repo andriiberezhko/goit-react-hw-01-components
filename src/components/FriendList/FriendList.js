@@ -1,8 +1,8 @@
-// import friends from "./FrindList/friends.json";
 import FriendListItem from "components/FriendListItem/FriendListItem"
+import s from './FriendList.module.css'
 
 const FriendList = ({ friends }) => {
-     return <ul className="friend-list">
+     return <ul className={s.friendList}>
         <FriendListItem friends={friends}/>
     </ul>
 }
