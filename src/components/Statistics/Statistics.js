@@ -6,10 +6,10 @@ const Statistics = ({ title, stats }) => {
         { title && <h2 className={s.title}>{title}</h2>}
         
         <ul className = {s.ul}>
-             {stats.map( item => (
-             <li className={s.item} style = {{backgroundColor: getRandomHexColor()}} key={item.id}>
-                 <span className="label">{item.label}</span>
-                 <span className="percentage">{item.percentage}</span>
+             {stats.map(( {id, label, percentage}) => (
+             <li className={s.item} style = {{backgroundColor: getRandomHexColor()}} key={id}>
+                 <span className="label">{label}</span>
+                 <span className="percentage">{percentage}</span>
              </li>
             ))}
         </ul>  
@@ -20,7 +20,10 @@ export default Statistics
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    stats: PropTypes.array,
+    stats:PropTypes.array,
+    id: PropTypes.string,
+   label: PropTypes.string,
+    percentage: PropTypes.number,
 }
 
 function getRandomHexColor() {

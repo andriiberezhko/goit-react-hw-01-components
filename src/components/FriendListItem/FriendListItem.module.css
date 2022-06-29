@@ -14,4 +14,11 @@
     height: 20px;
     border-radius: 50%;
     margin: 20px;
+    /* background-color: red; */
+}
+.is_online{
+    background-color: green;
+}
+.is_offline{
+    background-color: red;
 }
