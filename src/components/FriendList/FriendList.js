@@ -11,7 +11,7 @@ const FriendList = ({ friends }) => {
                      isOnline={isOnline}
                      avatar={avatar}
                    name={name}
-             ></FriendListItem>))
+                 />))
          }
          
          
@@ -23,9 +23,5 @@ const FriendList = ({ friends }) => {
 export default FriendList
 
 FriendList.propTypes = {
-    friends: PropTypes.array,
-    // id:PropTypes.number,
-    // isOnline: PropTypes.bool,
-    // avatar: PropTypes.string,
-    // name: PropTypes.string,
+    friends: PropTypes.arrayOf(PropTypes.object).isRequired,    
 }

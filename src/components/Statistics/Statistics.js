@@ -19,11 +19,8 @@ const Statistics = ({ title, stats }) => {
 export default Statistics
 
 Statistics.propTypes = {
-    title: PropTypes.string,
-    stats:PropTypes.array,
-    id: PropTypes.string,
-   label: PropTypes.string,
-    percentage: PropTypes.number,
+    title: PropTypes.string.isRequired,
+    stats:PropTypes.arrayOf(PropTypes.object).isRequired,   
 }
 
 function getRandomHexColor() {
